@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+        <product>
+                <name>T-shirt</name>
+                <description>Blue and Pink Tie-die T-shirt</description>
+                <price>30.99</price>
+                <categories>
+                        <category>clothing</category>
+                        <category>tie-die</category>
+                </categories>
+        </product>
+        <product>
+                <name>Running Shoes</name>
+                <description>High-jump Exercise and Running Shoes</description>
+                <price>45.99</price>
+                <categories>
+                        <category>clothing</category>
+                        <category>sports</category>
+                </categories>
+        </product>
+        <product>
+                <name>Cargo Pants</name>
+                <description>Blue and Pink Tie-die Cargo Pants</description>
+                <price>65.99</price>
+                <categories>
+                        <category>clothing</category>
+                        <category>tie-die</category>
+                </categories>
+        </product>
+        <product>
+                <name>Wireless Headphones</name>
+                <description>Ultra-high quality wireless headphones</description>
+                <price>72.89</price>
+                <categories>
+                        <category>electronics</category>
+                        <category>audio</category>
+                </categories>
+        </product>
+        <product>
+                <name>Film Camera</name>
+                <description>Vintage Silver Film Camera</description>
+                <price>47.99</price>
+                <categories>
+                        <category>electronics</category>
+                        <category>photography</category>
+                </categories>
+        </product>
+        <product>
+                <name>Earrings</name>
+                <description>White Gold and Ruby Earrings</description>
+                <price>360.89</price>
+                <categories>
+                        <category>apparel</category>
+                        <category>jewelry</category>
+                </categories>
+        </product>
+        <product>
+                <name>Necklace</name>
+                <description>Sterling Silver Chain Necklace for Men</description>
+                <price>120.39</price>
+                <categories>
+                        <category>apparel</category>
+                        <category>jewelry</category>
+                </categories>
+        </product>
+        <product>
+                <name>Soundbar</name>
+                <description>Home TV Soundbar for Living Room</description>
+                <price>270.99</price>
+                <categories>
+                        <category>electronics</category>
+                        <category>audio</category>
+                </categories>
+        </product>
+</products>

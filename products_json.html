@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset = "UTF-8">
+                <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+                <title>Products JSON</title>
+                <link rel="stylesheet" href="products.css">
+        </head>
+        <body>
+                <h1>Products JSON Representation</h1>
+                <div class="product-container" id="product-container"></div>
+            
+                <script>
+                        const products = [
+                                {
+                                        "name": "T-shirt",
+                                        "description": "Blue and Pink Tie-die T-shirt",
+                                        "price": 30.99,
+                                        "categories": ["clothing", "tie-die"]
+                                },
+                                {
+                                        "name": "Running Shoes",
+                                        "description": "High-jump Exercise and Running Shoes",
+                                        "price": 45.99,
+                                        "categories": ["clothing", "sports"]
+                                },
+                                {
+                                        "name": "Cargo Pants",
+                                        "description": "Blue and Pink Tie-die Cargo Pants",
+                                        "price": 65.99,
+                                        "categories": ["clothing", "tie-die"]
+                                },
+                                {
+                                        "name": "Wireless Headphones",
+                                        "description": "Ultra-high quality wireless headphones",
+                                        "price": 72.89,
+                                        "categories": ["electronics", "audio"]
+                                },
+                                {
+                                        "name": "Film Camera",
+                                        "description": "Vintage Silver Film Camera",
+                                        "price": 47.99,
+                                        "categories": ["electronics", "photography"]
+                                },
+                                {
+                                        "name": "Earrings",
+                                        "description": "White Gold and Ruby Earrings",
+                                        "price": 360.89,
+                                        "categories": ["apparel", "jewelry"]
+                                },
+                                {
+                                        "name": "Necklace",
+                                        "description": "Sterling Silver Chain Necklace for Men",
+                                        "price": 120.39,
+                                        "categories": ["apparel", "jewelry"]
+                                },
+                                {
+                                        "name": "Soundbar",
+                                        "description": "Home TV Soundbar for Living Room",
+                                        "price": 270.99,
+                                        "categories": ["electronics", "audio"]
+                                }
+                        ];
+                        
+                        const container = document.getElementById('product-container');
+                        products.forEach(product => {
+                                const productCard = document.createElement('div');
+                                productCard.classList.add('product-card');
+                                
+                                productCard.innerHTML = `
+                                        <h2>${product.name}</h2>
+                                        <p class = "description">${product.description}</p>
+                                        <p class = "price">$${product.price.toFixed(2)}</p>
+                                        <div class = "categories">
+                                        ${product.categories.map(category => `<span class="category">${category}</span>`).join('')}
+                                        </div>
+                                `;
+                                container.appendChild(productCard);
+                        });
+                </script>
+        </body>
+</html>
